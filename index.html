@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Associação Internacional da Juventude para Cooperação e Desenvolvimento</title>
+    <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="./assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="./assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="./assets/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body id="top">
+    <div class="loader">
+        <div id="wifi-loader">
+            <svg viewBox="0 0 86 86" class="circle-outer">
+                <circle r="40" cy="43" cx="43" class="back"></circle>
+                <circle r="40" cy="43" cx="43" class="front"></circle>
+                <circle r="40" cy="43" cx="43" class="new"></circle>
+            </svg>
+            <svg viewBox="0 0 60 60" class="circle-middle">
+                <circle r="27" cy="30" cx="30" class="back"></circle>
+                <circle r="27" cy="30" cx="30" class="front"></circle>
+            </svg>
+
+            <div data-text="Carregando..." class="text"></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./images/logo/logo.png" class="img-fluid logo-image">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-center ms-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre nós</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Projectos</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Fóruns</a></li>
+                            <li><a class="dropdown-item" href="#">10.000 Bolsas para o Brasil</a></li>
+                            <li><a class="dropdown-item" href="#">Fórum Internacional de Jovens (FIJE)</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contactos</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-auto">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link custom-btn btn" href="login-member.html">Login membro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-section d-flex justify-content-center align-items-center">
+            <div class="section-overlay"></div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        <div class="hero-section-text mt-5">
+                            <h6 class="text-white">Promovendo educação, paz e desenvolvimento sustentável em mais de 50
+                                países</h6>
+
+                            <h1 class="hero-title text-white mt-4 mb-4">Impulsionando a Cooperação Global pela <br>
+                                Juventude</h1>
+
+                            <a href="#categories-section" class="custom-btn custom-border-btn btn">Participe conosco</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <form class="custom-form hero-form" action="#" method="get" role="form">
+                            <h3 class="text-white mb-3">Pesquise por um evento</h3>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1"><i
+                                                class="bi-person custom-icon"></i></span>
+
+                                        <input type="text" name="job-title" id="job-title" class="form-control"
+                                            placeholder="Título do evento?" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon2"><i
+                                                class="bi-geo-alt custom-icon"></i></span>
+
+                                        <input type="text" name="job-location" id="job-location" class="form-control"
+                                            placeholder="Localização?" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-12">
+                                    <button type="submit" class="form-control">
+                                        Encontrar evento
+                                    </button>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-flex flex-wrap align-items-center mt-4 mt-lg-0">
+                                        <span class="text-white mb-lg-0 mb-md-0 me-2">Destaques</span>
+
+                                        <div>
+                                            <a href="#" class="badge">Fóruns em 5 Continentes</a>
+
+                                            <a href="#" class="badge">Empoderamento Feminino</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="categories-section section-padding" id="categories-section">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-12 col-12 text-center">
+                        <h2 class="mb-5">Nossos <span>Números</span></h2>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="categories-block">
+                            <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                <i class="categories-icon bi bi-people-fill"></i>
+
+                                <small class="categories-block-title">Membros efetivos</small>
+
+                                <div
+                                    class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                                    <span class="categories-block-number-text">+20</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="categories-block">
+                            <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                <i class="categories-icon bi bi-award-fill"></i>
+
+                                <small class="categories-block-title">Bolsas de estudos</small>
+
+                                <div
+                                    class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                                    <span class="categories-block-number-text">+9K</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="categories-block">
+                            <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                <i class="categories-icon bi bi-calendar2-event-fill"></i>
+
+                                <small class="categories-block-title">Eventos</small>
+
+                                <div
+                                    class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                                    <span class="categories-block-number-text">+34</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="categories-block">
+                            <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                <i class="categories-icon bi bi-bookmark-check-fill"></i>
+
+                                <small class="categories-block-title">Projectos</small>
+
+                                <div
+                                    class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                                    <span class="categories-block-number-text">+5</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12">
+                        <div class="about-image-wrap custom-border-radius-start">
+                            <img src="./images/avatar/user (2).jpeg"
+                                class="about-image custom-border-radius-start img-fluid" alt="">
+
+                            <div class="about-info">
+                                <h4 class="text-white mb-0 me-2">Dr. Américo Tomás</h4>
+
+                                <p class="text-white mb-0">Porta-voz</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="custom-text-block">
+                            <h2 class="text-white mb-2">Introdução ao FIJE</h2>
+
+                            <p class="text-white">A Associação Internacional de Jovens para Cooperação e Desenvolvimento
+                                (FIJE), tem a sua visão guiada na materialização dos planos de desenvolvimento
+                                Nacionais, Regionais, Continentais e Internacionais virados para a JUVENTUDE e a
+                                sociedade em geral, que constitui a nossa razão de Ser, enquanto organização.</p>
+
+                            <div class="custom-border-btn-wrap d-flex align-items-center mt-5">
+                                <a href="about.html" class="custom-btn custom-border-btn btn me-4">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12">
+                        <div class="instagram-block">
+                            <img src="./images/galeria/WhatsApp Image 2025-04-04 at 15.39.34.jpeg"
+                                class="about-image custom-border-radius-end img-fluid" alt="">
+
+                            <div class="instagram-block-text">
+                                <a href="https://www.instagram.com/fije_oficial/" class="custom-btn btn">
+                                    <i class="bi-instagram"></i>
+                                    @fije_oficial
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="job-section job-featured-section section-padding" id="job-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 text-center mx-auto mb-4">
+                        <h2>Projectos em Destaques</h2>
+
+                        <p>Conectando<strong> jovens </strong> e embaixadas para a cooperação global.</p>
+                    </div>
+
+                    <div class="col-lg-12 col-12">
+                        <div class="job-thumb d-flex">
+                            <div class="job-image-wrap bg-white shadow-lg">
+                                <img src="./images/logo/logo_transp1.png" class="job-image img-fluid" alt="">
+                            </div>
+
+                            <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
+                                <div class="mb-3">
+                                    <h4 class="job-title mb-lg-0">
+                                        <a href="#" class="job-title-link">10.000 bolsas para Brasil</a>
+                                    </h4>
+
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <p class="job-location mb-0">
+                                            <i class="custom-icon bi-geo-alt me-1"></i>
+                                            Luanda, Benguela...
+                                        </p>
+
+                                        <p class="job-date mb-0">
+                                            <i class="custom-icon bi-clock me-1"></i>
+                                            ---
+                                        </p>
+
+                                        <p class="job-price mb-0">
+                                            <i class="custom-icon bi-cash me-1"></i>
+                                            ---
+                                        </p>
+
+                                        <div class="d-flex">
+                                            <p class="mb-0">
+                                                <a href="#" class="badge badge-level">Presencial</a>
+                                            </p>
+
+                                            <p class="mb-0">
+                                                <a href="#" class="badge">Online(site)</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="job-section-btn-wrap">
+                                    <a href="details.html" class="custom-btn btn">Ver agora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="job-thumb d-flex">
+                            <div class="job-image-wrap bg-white shadow-lg">
+                                <img src="./images/logo/logo_transp1.png" class="job-image img-fluid" alt="">
+                            </div>
+
+                            <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
+                                <div class="mb-3">
+                                    <h4 class="job-title mb-lg-0">
+                                        <a href="details.html" class="job-title-link">10.000 bolsas para Brasil</a>
+                                    </h4>
+
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <p class="job-location mb-0">
+                                            <i class="custom-icon bi-geo-alt me-1"></i>
+                                            Luanda, Benguela...
+                                        </p>
+
+                                        <p class="job-date mb-0">
+                                            <i class="custom-icon bi-clock me-1"></i>
+                                            ---
+                                        </p>
+
+                                        <p class="job-price mb-0">
+                                            <i class="custom-icon bi-cash me-1"></i>
+                                            ---
+                                        </p>
+
+                                        <div class="d-flex">
+                                            <p class="mb-0">
+                                                <a href="#" class="badge badge-level">Presencial</a>
+                                            </p>
+
+                                            <p class="mb-0">
+                                                <a href="#" class="badge">Online(site)</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="job-section-btn-wrap">
+                                    <a href="#" class="custom-btn btn">Ver agora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center mt-5">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">Anterior</span>
+                                    </a>
+                                </li>
+
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">Próximo</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <div class="custom-text-block custom-border-radius-start">
+                            <h2 class="text-white mb-3">FIJE ajuda você jovem a construír o seu futuro.</h2>
+
+                            <p class="text-white">Um mundo com jovens promovendo paz, educação e prosperidade.</p>
+
+                            <div class="d-flex mt-4">
+                                <div class="counter-thumb">
+                                    <div class="d-flex">
+                                        <span class="counter-number" data-from="1" data-to="5"
+                                            data-speed="1000">+</span>
+                                        <span class="counter-number-text">K</span>
+                                    </div>
+
+                                    <span class="counter-text">Jovens activos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="video-thumb">
+                            <img src="./images/galeria/WhatsApp Image 2025-04-04 at 15.52.02.jpeg"
+                                class="about-image custom-border-radius-end img-fluid" alt="">
+
+                            <div class="video-info">
+                                <a href="https://www.youtube.com/@Associa%C3%A7%C3%A3oFIJE-x7h"
+                                    class="youtube-icon bi-youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="job-section recent-jobs-section section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 col-12 mb-4">
+                        <h2>Eventos Recentes</h2>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="job-thumb job-thumb-box">
+                            <div class="job-image-box-wrap">
+                                <a href="#">
+                                    <img src="./images/galeria/WhatsApp Image 2025-04-04 at 15.52.00.jpeg"
+                                        class="job-image img-fluid" alt="">
+                                </a>
+
+                                <div class="job-image-box-wrap-info d-flex align-items-center">
+                                    <p class="mb-0">
+                                        <a href="#" class="badge badge-level">Presencial</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="job-body">
+                                <h4 class="job-title">
+                                    <a href="#" class="job-title-link">Presentação 10.000 bolsas para brasil</a>
+                                </h4>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mt-2 mb-4">
+                                        <img src="./images/logo/logo.png" class="job-image me-3 img-fluid" alt="">
+                                    </div>
+
+                                    <a href="#" class="bi-bookmark ms-auto me-2">
+                                    </a>
+
+                                    <a href="#" class="bi-heart">
+                                    </a>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="job-location">
+                                        <i class="custom-icon bi-geo-alt me-1"></i>
+                                        Benguela - Angola
+                                    </p>
+
+                                    <p class="job-date">
+                                        <i class="custom-icon bi-clock me-1"></i>
+                                        ---
+                                    </p>
+                                </div>
+
+                                <div class="d-flex align-items-center border-top pt-3">
+                                    <p class="job-price mb-0">
+                                        <i class="custom-icon bi-cash me-1"></i>
+                                        ---
+                                    </p>
+
+                                    <a href="#" class="custom-btn btn ms-auto">Saber mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="job-thumb job-thumb-box">
+                            <div class="job-image-box-wrap">
+                                <a href="#">
+                                    <img src="./images/galeria/WhatsApp Image 2025-04-04 at 15.52.00.jpeg"
+                                        class="job-image img-fluid" alt="">
+                                </a>
+
+                                <div class="job-image-box-wrap-info d-flex align-items-center">
+                                    <p class="mb-0">
+                                        <a href="#" class="badge badge-level">Presencial</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="job-body">
+                                <h4 class="job-title">
+                                    <a href="#" class="job-title-link">Presentação 10.000 bolsas para brasil</a>
+                                </h4>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mt-2 mb-4">
+                                        <img src="./images/logo/logo.png" class="job-image me-3 img-fluid" alt="">
+                                    </div>
+
+                                    <a href="#" class="bi-bookmark ms-auto me-2">
+                                    </a>
+
+                                    <a href="#" class="bi-heart">
+                                    </a>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="job-location">
+                                        <i class="custom-icon bi-geo-alt me-1"></i>
+                                        Benguela - Angola
+                                    </p>
+
+                                    <p class="job-date">
+                                        <i class="custom-icon bi-clock me-1"></i>
+                                        ---
+                                    </p>
+                                </div>
+
+                                <div class="d-flex align-items-center border-top pt-3">
+                                    <p class="job-price mb-0">
+                                        <i class="custom-icon bi-cash me-1"></i>
+                                        ---
+                                    </p>
+
+                                    <a href="#" class="custom-btn btn ms-auto">Saber mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="job-thumb job-thumb-box">
+                            <div class="job-image-box-wrap">
+                                <a href="#">
+                                    <img src="./images/galeria/WhatsApp Image 2025-04-04 at 15.52.00.jpeg"
+                                        class="job-image img-fluid" alt="">
+                                </a>
+
+                                <div class="job-image-box-wrap-info d-flex align-items-center">
+                                    <p class="mb-0">
+                                        <a href="#" class="badge badge-level">Presencial</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="job-body">
+                                <h4 class="job-title">
+                                    <a href="#" class="job-title-link">Presentação 10.000 bolsas para brasil</a>
+                                </h4>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mt-2 mb-4">
+                                        <img src="./images/logo/logo.png" class="job-image me-3 img-fluid" alt="">
+                                    </div>
+
+                                    <a href="#" class="bi-bookmark ms-auto me-2">
+                                    </a>
+
+                                    <a href="#" class="bi-heart">
+                                    </a>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="job-location">
+                                        <i class="custom-icon bi-geo-alt me-1"></i>
+                                        Benguela - Angola
+                                    </p>
+
+                                    <p class="job-date">
+                                        <i class="custom-icon bi-clock me-1"></i>
+                                        ---
+                                    </p>
+                                </div>
+
+                                <div class="d-flex align-items-center border-top pt-3">
+                                    <p class="job-price mb-0">
+                                        <i class="custom-icon bi-cash me-1"></i>
+                                        ---
+                                    </p>
+
+                                    <a href="#" class="custom-btn btn ms-auto">Saber mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                
+                    <div class="col-lg-4 col-12 recent-jobs-bottom d-flex ms-auto my-4">
+                        <a href="event-listings.html" class="custom-btn btn ms-lg-auto">Ver lista de eventos</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="reviews-section section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <h2 class="text-center mb-5">Depoimento de Jovens</h2>
+
+                        <div class="owl-carousel owl-theme reviews-carousel">
+                            <div class="reviews-thumb">
+
+                                <div class="reviews-info d-flex align-items-center">
+                                    <img src="./images/avatar/kina.jpg"
+                                        class="avatar-image img-fluid" alt="">
+
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                        <p class="mb-0">
+                                            <strong>Kina Mukumba</strong>
+                                            <small>Software Developer</small>
+                                        </p>
+
+                                        <div class="reviews-icons">
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-body">
+                                    <img src="images/left-quote.png" class="quote-icon img-fluid" alt="">
+
+                                    <h4 class="reviews-title">A FIJE me proporcionou a oportunidade de desenvolver soluções tecnológicas com propósito.</h4>
+                                </div>
+                            </div>
+
+                            <div class="reviews-thumb">
+                                <div class="reviews-info d-flex align-items-center">
+                                    <img src="./images/avatar/serafim.jpg"
+                                        class="avatar-image img-fluid" alt="">
+
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                        <p class="mb-0">
+                                            <strong>Serafim Pundu</strong>
+                                            <small>Data Analitist</small>
+                                        </p>
+
+                                        <div class="reviews-icons">
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star"></i>
+                                            <i class="bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-body">
+                                    <img src="images/left-quote.png" class="quote-icon img-fluid" alt="">
+
+                                    <h4 class="reviews-title">Como analista de dados, sempre busquei projetos que unissem tecnologia e impacto social. A FIJE me abriu portas para colaborar com jovens visionários.</h4>
+                                </div>
+                            </div>
+
+                            <div class="reviews-thumb">
+
+                                <div class="reviews-info d-flex align-items-center">
+                                    <img src="./images/avatar/kina.jpg"
+                                        class="avatar-image img-fluid" alt="">
+
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                        <p class="mb-0">
+                                            <strong>Kina Mukumba</strong>
+                                            <small>Software Developer</small>
+                                        </p>
+
+                                        <div class="reviews-icons">
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-body">
+                                    <img src="images/left-quote.png" class="quote-icon img-fluid" alt="">
+
+                                    <h4 class="reviews-title">A FIJE me proporcionou a oportunidade de desenvolver soluções tecnológicas com propósito.</h4>
+                                </div>
+                            </div>
+
+                            <div class="reviews-thumb">
+                                <div class="reviews-info d-flex align-items-center">
+                                    <img src="./images/avatar/serafim.jpg"
+                                        class="avatar-image img-fluid" alt="">
+
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                        <p class="mb-0">
+                                            <strong>Serafim Pundu</strong>
+                                            <small>Data Analitist</small>
+                                        </p>
+
+                                        <div class="reviews-icons">
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star"></i>
+                                            <i class="bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-body">
+                                    <img src="images/left-quote.png" class="quote-icon img-fluid" alt="">
+
+                                    <h4 class="reviews-title">Como analista de dados, sempre busquei projetos que unissem tecnologia e impacto social. A FIJE me abriu portas para colaborar com jovens visionários.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-10">
+                        <h2 class="text-white mb-2">Mais de 05 Projectos em aberto</h2>
+
+                        <p class="text-white">Com mais de 05 projetos em andamento, estamos sempre à procura de jovens visionários, profissionais engajados e instituições parceiras para colaborar em iniciativas que realmente fazem a diferença. Junte-se a nós e seja parte da mudança!
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-12 ms-auto">
+                        <div class="custom-border-btn-wrap d-flex align-items-center mt-lg-4 mt-2">
+                            <a href="#" class="custom-btn custom-border-btn btn me-4">Criar conta</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="./images/logo/logo.png" class="img-fluid logo-image">
+                    </div>
+
+                    <p class="mb-2">
+                        <i class="custom-icon bi-globe me-1"></i>
+                        <br>
+                        <a href="#" class="site-footer-link">
+                            Luanda, Angola
+                        </a>
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="custom-icon bi-telephone me-1"></i>
+                        <br>
+                        <a href="tel: 305-240-9671" class="site-footer-link">
+                            +244 923 006 979
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="custom-icon bi-envelope me-1"></i>
+
+                        <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                            forumintjovensembaixadafije@gmail.com
+                        </a>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6 ms-lg-auto">
+                    <h6 class="site-footer-title">Empresa</h6>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Sobre nós</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Eventos</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contactos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="site-footer-title">Recursos</h6>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQS</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Termos</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Condições</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-8 col-12 mt-3 mt-lg-0">
+                    <h6 class="site-footer-title">Newsletter</h6>
+
+                    <form class="custom-form newsletter-form" action="#" method="post" role="form">
+                        <h6 class="site-footer-title">Receber notifocações</h6>
+
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi-person"></i></span>
+
+                            <input type="text" name="newsletter-name" id="newsletter-name" class="form-control"
+                                placeholder="seuemail.com" required>
+
+                            <button type="submit" class="form-control">
+                                <i class="bi-send"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-12 d-flex align-items-center">
+                        <p class="copyright-text">Copyright © FIJE 2025</p>
+
+                        <ul class="footer-menu d-flex">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mt-2 mt-lg-0">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://web.facebook.com/profile.php?id=61565637599437" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.linkedin.com/company/fijeinternational/" class="social-icon-link bi-linkedin"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/fije_oficial/" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.youtube.com/@Associa%C3%A7%C3%A3oFIJE-x7h" class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mt-2 d-flex align-items-center mt-lg-0">
+                        <p>Developed by: <a class="sponsored-link" rel="sponsored" href="https://www.linkedin.com/in/kina-mukumba-92b404354/"
+                                target="_blank">kina_mukumba</a></p>
+                    </div>
+
+                    <a class="back-top-icon bi-arrow-up smoothscroll d-flex justify-content-center align-items-center"
+                        href="#top"></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="./assets/js/alert.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/counter.js"></script>
+    <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>
